@@ -72,3 +72,46 @@ export const pubs = [
 		numViews: 10,
 	},
 ];
+
+export const listUsers = [
+	{
+		imgUser: "https://unavatar.io/twitter/almeidacabron",
+		userName: "PacoGonzalez",
+		subUserName: "@PacoGonzalez213_",
+		isVerified: true,
+		description:
+			"@PacoGonzalez213_ is a software engineer and a passionate about technology. He is a self-taught developer and has a strong background in web development. He is also a big fan of music and enjoys playing the guitar.",
+	},
+	{
+		imgUser: "https://unavatar.io/twitter/juan",
+		userName: "Juan",
+		subUserName: "@juan",
+		isVerified: true,
+		description:
+			"Juan is a software engineer and a passionate about technology. He is a self-taught developer and has a strong background in web development. He is also a big fan of music and enjoys playing the guitar.",
+	},
+	{
+		imgUser: "https://unavatar.io/twitter/davidCabrero",
+		userName: "David Cabrero",
+		subUserName: "@davidCabrero",
+		isVerified: true,
+		description:
+			"David is a software engineer and a passionate about technology. He is a self-taught developer and has a strong background in web development. He is also a big fan of music and enjoys playing the guitar.",
+	},
+	{
+		imgUser: "https://unavatar.io/twitter/davi24",
+		userName: "David Cabrero",
+		subUserName: "@davidCabrero",
+		isVerified: true,
+		description:
+			"David is a software engineer and a passionate about technology. He is a self-taught developer and has a strong background in web development. He is also a big fan of music and enjoys playing the guitar.",
+	},
+	{
+		imgUser: "https://unavatar.io/twitter/davi24",
+		userName: "David Cabrero",
+		subUserName: "@davidCabrero",
+		isVerified: true,
+		description:
+			"David is a software engineer and a passionate about technology. He is a self-taught developer and has a strong background in web development. He is also a big fan of music and enjoys playing the guitar.",
+	},
+];

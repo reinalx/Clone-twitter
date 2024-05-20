@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Feed } from "./components/Feed";
 import { MenuList } from "./components/Menu/MenuList";
+import { Sidebar } from "./components/Sidebar";
 import { User } from "./components/User";
 
 function App() {
@@ -9,31 +10,38 @@ function App() {
 
 	// Tengo que abstraer el menu a un componente aparte, para que pueda ser reutilizado
 	return (
-		<body>
+		<body className="body-twitter">
 			<header className="twitter-header">
-				<div className="twitter-menu">
-					<div>
-						<div className="logo">
-							<img
-								width={46}
-								src="https://graffica.ams3.digitaloceanspaces.com/2023/07/F1ySdm9WYAIbjHo-1024x1024.jpeg"
-								alt="logo twitter"
-							/>
+				<div>
+					<div className="twitter-header-content">
+						<div className="twitter-menu">
+							<div>
+								<div className="logo">
+									<img
+										width={46}
+										src="https://graffica.ams3.digitaloceanspaces.com/2023/07/F1ySdm9WYAIbjHo-1024x1024.jpeg"
+										alt="logo twitter"
+									/>
+								</div>
+								<div className="menu-list">
+									<MenuList />
+								</div>
+								<button className="bt-post">Post</button>
+							</div>
+							<footer className="footer-list">
+								<User />
+							</footer>
 						</div>
-						<div className="menu-list">
-							<MenuList />
-						</div>
-						<button className="bt-post">Post</button>
 					</div>
-					<footer className="footer-list">
-						<User />
-					</footer>
 				</div>
 			</header>
 			<main className="twitter-main">
 				<section className="main-content">
 					<div className="main-feed">
 						<Feed />
+					</div>
+					<div className="main-sidebar">
+						<Sidebar />
 					</div>
 				</section>
 			</main>

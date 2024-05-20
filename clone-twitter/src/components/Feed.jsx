@@ -12,7 +12,7 @@ export function Feed() {
 
 	return (
 		<>
-			<header className="feed-header">
+			<header className="c-sticky">
 				<HeaderHome />
 			</header>
 			<div className="feed">

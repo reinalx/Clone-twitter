@@ -1,15 +1,23 @@
 body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.body-twitter {
   background-color: rgb(0, 0, 0);
   color: white;
   display: flex;
   scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
   margin: 0;
-  min-height: 100vh;
-  min-width: 100vw;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
 }
+
 
 .logo {
   margin: 6px;
@@ -20,7 +28,6 @@ body {
 
 .twitter-header {
   display: flex;
-  position: fixed;
 
   align-items: flex-end;
   flex-direction: column;
@@ -33,27 +40,38 @@ body {
   position: relative;
   margin-right: 10px;
 
-  overflow: auto;
-  scrollbar-color: rgb(62, 65, 68) rgb(22, 24, 28);
+
 }
 
+.twitter-header>div {
+  width: 275px;
+  margin-left: 60px;
 
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+}
+
+.twitter-header-content {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
 
 .twitter-menu {
-  top: 0;
   display: flex;
   justify-content: space-between;
-  min-width: 275px;
-  margin-left: 60px;
   height: 100%;
+  padding: 0;
+
   flex-direction: column;
 
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: auto;
+  position: relative;
 
-
-
+  overflow-y: auto;
   background-color: chocolate;
 }
 
@@ -116,6 +134,8 @@ body {
 /*El contenido de la app*/
 
 .twitter-main {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: flex-start;
   background-color: aqua;
@@ -125,6 +145,8 @@ body {
 }
 
 .main-content {
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 1050px;
   background-color: brown;
@@ -133,18 +155,26 @@ body {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
+  position: relative;
 }
 
 .main-feed {
+
   background-color: green;
   max-width: 600px;
-  flex: auto
+  position: relative;
+  flex: auto;
+  margin: 0;
+
+  border: solid 1px rgb(47, 51, 54);
+
 }
 
 .main-sidebar {
+
   max-width: 450px;
   flex: auto;
-  background-color: yellow;
+  background-color: rgb(47, 51, 54);
 }
 
 
@@ -282,14 +312,43 @@ body {
   margin-left: 10px;
 }
 
+
+/* conatainers */
+.c-absolute {
+  position: absolute;
+  width: 100%;
+}
+
+.c-relative {
+  position: relative;
+  width: 100%;
+}
+
+.c-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.c-sticky {
+  position: sticky;
+  z-index: 3;
+  top: -0.5px;
+  width: 100%;
+}
+
 /*feed*/
+
+
 
 .feed-header {
   display: grid;
-  grid-template-columns: 1fr 1fr 36px;
-  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 46px;
+  grid-template-rows: 53px;
+
   align-items: center;
-  padding: 12px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
   border: solid 1px rgb(47, 51, 54);
 }
 
@@ -297,6 +356,10 @@ body {
   display: flex;
   justify-content: center;
 
+}
+
+.feed-header-element>svg {
+  width: 20px;
 }
 
 .feed-header-active {
@@ -310,8 +373,16 @@ body {
 
 .feed-header-element {
   display: flex;
+  padding-bottom: 16px;
+  padding-top: 18px;
   align-items: center;
   flex-direction: column;
+  transition-duration: 0.2s;
+}
+
+.feed-header-element:hover {
+  background-color: rgba(231, 233, 234, 0.1);
+  transition-duration: 0.2s;
 }
 
 .feed-header-element>div {
@@ -325,7 +396,7 @@ body {
   background-color: rgb(29, 155, 240);
   position: absolute;
   align-self: center;
-  top: 28px;
+  top: 32px;
 
 
   border-radius: 100px;
