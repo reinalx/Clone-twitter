@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { UserInfoContext } from "../contexts/userInfo";
-import { More } from "../icons/More";
+import { MoreWhite } from "../icons/MoreWhite";
 
 export function User() {
 	const { imgUser, name, userName } = useContext(UserInfoContext);
@@ -9,11 +9,11 @@ export function User() {
 		<div className="card-user">
 			<img className="img-user" src={imgUser} alt="foto usuario" />
 			<div className="names-user">
-				<span className="firstName-user">{name} </span>
-				<span className="userName-user">@{userName} </span>
+				<span className="userName">{name} </span>
+				<span className="subUserName">@{userName} </span>
 			</div>
 			<span className="more-user">
-				<More />
+				<MoreWhite />
 			</span>
 		</div>
 	);

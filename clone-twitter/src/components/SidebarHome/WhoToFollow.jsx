@@ -1,18 +1,15 @@
 import { listUsers } from "../../const";
+import { WhoToFollowUser } from "./WhoToFollowUser";
 
 export function WhoToFollow() {
 	return (
 		<div className="whoFollow">
-			<h3>Who to follow</h3>
-			{listUsers.map((user) => (
-				<div className="user">
-					<img src={user.imgUser} alt="user" />
-					<div className="user-info">
-						<span>{user.userName}</span>
-						<span>{user.subUserName}</span>
-					</div>
-				</div>
-			))}
+			<h3 className="title">Who to follow</h3>
+			<div className="content">
+				{listUsers.map((user) => (
+					<WhoToFollowUser user={user} />
+				))}
+			</div>
 		</div>
 	);
 }

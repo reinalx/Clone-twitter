@@ -1,4 +1,5 @@
 import { Home } from "../../icons/Home";
+import { Search } from "../../icons/Search";
 import { MenuOption } from "./MenuOption";
 
 export function MenuList() {
@@ -9,12 +10,10 @@ export function MenuList() {
 				<Home />
 				<span>Home</span>
 			</div>
-			<MenuOption
-				img={
-					"m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-				}
-				text={"Explore"}
-			/>
+			<div className="menu-option">
+				<Search size={32} color="#fff" />
+				<span>Explote</span>
+			</div>
 			<MenuOption
 				img={
 					"M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"

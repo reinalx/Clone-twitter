@@ -115,3 +115,61 @@ export const listUsers = [
 			"David is a software engineer and a passionate about technology. He is a self-taught developer and has a strong background in web development. He is also a big fan of music and enjoys playing the guitar.",
 	},
 ];
+
+export const trends = [
+	{
+		nameTrend: "#Milei",
+		category: "Politics",
+		numPost: "260k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "Only in X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "Only in X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#Milei",
+		category: "Politics",
+		numPost: "260k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "Only on X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "Only on X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "Only on X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "Only on X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "only in X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "only in X",
+		numPost: "280k",
+	},
+	{
+		nameTrend: "#FelizLunes",
+		category: "only in X",
+		numPost: "280k",
+	},
+];

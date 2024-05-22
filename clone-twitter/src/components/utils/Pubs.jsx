@@ -27,10 +27,10 @@ export function Pubs({
 			<div className="pubs-content">
 				<header className="pubs-header">
 					<div className="pubs-user">
-						<span className="pubs-userName">{userName}</span>
+						<span className="userName">{userName}</span>
 						{isVerified && <Verified />}
-						<span className="pubs-subUserName">
-							@{subUserName}·{pubDate}
+						<span className="subUserName">
+							{subUserName}·{pubDate}
 						</span>
 					</div>
 					<span className="more-user">
