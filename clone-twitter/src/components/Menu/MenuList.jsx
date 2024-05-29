@@ -7,11 +7,12 @@ export function MenuList() {
 	return (
 		<>
 			<div className="menu-option">
-				<Home />
+				<Home size={26} color="#fff" />
+				w
 				<span>Home</span>
 			</div>
 			<div className="menu-option">
-				<Search size={32} color="#fff" />
+				<Search size={26} color="#fff" />
 				<span>Explote</span>
 			</div>
 			<MenuOption

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Verified } from "../../icons/Verified";
-
-export function WhoToFollowUser({ user }) {
+import { Verified } from "../../../icons/Verified";
+export function WhoToFollowItem({ user }) {
 	const [isFollowed, setIsFollowed] = useState(user.isFollowed);
 	const [mouseOver, setMouseOver] = useState(false);
 

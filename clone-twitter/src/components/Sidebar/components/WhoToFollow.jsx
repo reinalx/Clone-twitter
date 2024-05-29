@@ -1,5 +1,5 @@
-import { listUsers } from "../../const";
-import { WhoToFollowUser } from "./WhoToFollowUser";
+import { listUsers } from "../../../const";
+import { WhoToFollowItem } from "./WhoToFollowItem";
 
 export function WhoToFollow() {
 	return (
@@ -7,7 +7,7 @@ export function WhoToFollow() {
 			<h3 className="title">Who to follow</h3>
 			<div className="content">
 				{listUsers.map((user) => (
-					<WhoToFollowUser user={user} />
+					<WhoToFollowItem user={user} />
 				))}
 			</div>
 		</div>

@@ -1,4 +1,10 @@
 import { useState } from "react";
+import { GifIcon } from "../../icons/GifIcon";
+import { List } from "../../icons/List";
+import { Location } from "../../icons/Location";
+import { Picture } from "../../icons/Picture";
+import { Schedule } from "../../icons/Schedule";
+import { Smile } from "../../icons/Smile";
 import { World } from "../../icons/World";
 
 export function DoPost({ imgUser }) {
@@ -43,11 +49,12 @@ export function DoPost({ imgUser }) {
 				</div>
 				<div className="doPost-actions">
 					<div>
-						<span>b1</span>
-						<span>b2</span>
-						<span>b3</span>
-						<span>b4</span>
-						<span>b5</span>
+						<Picture size={20} styles="icon" />
+						<GifIcon size={20} styles="icon" />
+						<List size={20} styles="icon" />
+						<Smile size={20} styles="icon" />
+						<Schedule size={20} styles="icon" />
+						<Location size={22} styles="icon" />
 					</div>
 					<button>Post</button>
 				</div>

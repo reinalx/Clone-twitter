@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Feed } from "./components/Feed";
 import { MenuList } from "./components/Menu/MenuList";
-import { Sidebar } from "./components/Sidebar";
+import { Sidebar } from "./components/Sidebar/Sidebar";
 import { User } from "./components/User";
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
 								<div className="menu-list">
 									<MenuList />
 								</div>
+								{/* rome-ignore lint/a11y/useButtonType: <explanation> */}
 								<button className="bt-post">Post</button>
 							</div>
 							<footer className="footer-list">
@@ -37,11 +38,13 @@ function App() {
 			</header>
 			<main className="twitter-main">
 				<section className="main-content">
-					<div className="main-feed">
-						<Feed />
-					</div>
-					<div className="main-sidebar">
-						<Sidebar />
+					<div>
+						<div className="main-feed">
+							<Feed />
+						</div>
+						<div className="main-sidebar">
+							<Sidebar />
+						</div>
 					</div>
 				</section>
 			</main>
